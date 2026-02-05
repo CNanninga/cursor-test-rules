@@ -1,0 +1,16 @@
+---
+globs: **/*.tsx
+alwaysApply: false
+---
+
+Always wrap JSX in parentheses and a fragment. Example:
+
+```
+function Component() {
+  return (
+    <>
+      ...
+    </>
+  );
+}
+```
