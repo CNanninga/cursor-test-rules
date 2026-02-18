@@ -1,0 +1,15 @@
+---
+description: Create and place new skills in project skills/ directory, not .cursor/skills
+alwaysApply: true
+---
+
+# Skills directory: use project `skills/` only
+
+This repo is an **agent skills repository** for use with `npx skills add`. Skills here (e.g. `skills/react-best-practices`) are meant to be copied into agent-specific directories on a user's machine (e.g. `~/.cursor/skills/react-best-practices`), not consumed from this repo’s `.cursor/skills`.
+
+**Rule:** Whenever you create, plan, or add a new skill in this project, place it under the project’s **`skills/`** directory (e.g. `skills/<skill-name>/`), **not** under `.cursor/skills/`.
+
+- New skill folder: `skills/<skill-name>/` (with `SKILL.md` and any supporting files).
+- Do **not** create or suggest `.cursor/skills/<skill-name>/` in this repo.
+
+This keeps the repo the single source of truth for skills that get distributed via `npx skills add`.
